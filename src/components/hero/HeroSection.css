@@ -1,0 +1,93 @@
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .hero-left {
+    flex: 1;
+    background-color: #c14a4a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100% !important;
+  }
+  
+  .sushi-image img {
+    width: 100%;
+    min-width: 600px;
+  }
+  
+  .japanese-text {
+    font-size: 3em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  .hero-right {
+    flex: 2;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .hero-right h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-right p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .order-button, .how-to-order-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .order-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .how-to-order-button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hero-info {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-info span {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .hero-testimonial {
+    font-style: italic;
+  }
+  
