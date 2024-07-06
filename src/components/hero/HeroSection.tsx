@@ -1,33 +1,22 @@
-import React from 'react';
-import './HeroSection.css';
-import hero from '../../assets/hero.png'
+import React from "react";
+import "./Hero.css";
+import line from '../../assets/line.png'
 
-const HeroSection: React.FC = () => {
+const Hero: React.FC = () => {
   return (
-    <section className="hero">
-      <div className="hero-left">
-        <div className="sushi-image">
-          <img src={hero} alt="Sushi" />
+    <div className="hero">
+      <div className="hero-content">
+        <div className="hero-content__top">
+          <h1>PORTEN</h1>
+          <img src={line} alt="" />
+          <p>САНКТ-ПЕТЕРБУРГ</p>
         </div>
       </div>
-      <div className="hero-right">
-        <h1>Feel the taste of Japanese foods</h1>
-        <p>Feel the taste of most popular Japanese foods from anywhere and anytime.</p>
-        <div className="hero-buttons">
-          <button className="order-button">Order Now</button>
-          <button className="how-to-order-button">
-            <i className="fas fa-play"></i> How to Order
-          </button>
-        </div>
-        <div className="hero-info">
-          <span>24K+</span> Happy Customer
-        </div>
-        <div className="hero-testimonial">
-          “This is the best Japanese food delivery service that ever exists”
-        </div>
-      </div>
-    </section>
+        <p className="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.
+        </p>
+    </div>
   );
 };
 
-export default HeroSection;
+export default Hero;
