@@ -6,6 +6,9 @@ import './App.css'; // Optional, for additional global styles
 import Navbar from './components/header/Header';
 import Hero from './components/hero/HeroSection';
 import ProductList from './components/ProductList/ProductList';
+import CollectionSection from './components/CollectionSection/CollectionSection';
+import Products from './components/Products/Products';
+import Footer from './components/footer/Footer';
 
 
 const App: React.FC = () => {
@@ -15,7 +18,10 @@ const App: React.FC = () => {
       <main>
         <Hero/>
         <ProductList/>
+        <CollectionSection/>
+        <Products/>
       </main>
+      <Footer/>
     </div>
   );
 };
