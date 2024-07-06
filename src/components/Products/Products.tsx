@@ -52,8 +52,43 @@ const Products: React.FC = () => {
   };
 
   return (
-    <>
-    </>
+    <ThemeProvider theme={theme}>
+      <div className="products-container container">
+        <h1>новые поступления</h1>
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div className="products-grid">
+            {products.map((product) => (
+              <div key={product.id} className="product-cardn">
+                <div className="product-image-wrapper">
+                  <img src={product.images[0]} alt={product.title} />
+                </div>
+                <h2>{product.title}</h2>
+                <p>{product.price} руб.</p>
+              </div>
+            ))}
+          </div>
+        )}
+        <div className="pagination">
+          <Pagination
+            count={totalPages}
+            page={currentPage}
+            onChange={handlePageChange}
+            color="primary"
+            sx={{
+              button: {
+                color: '#ffffff', 
+              },
+              '.Mui-selected': {
+                backgroundColor: '#ffffff', 
+                color: '#000000',
+              },
+            }}
+          />
+        </div>
+      </div>
+    </ThemeProvider>
   );
 };
 
